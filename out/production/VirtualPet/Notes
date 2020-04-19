@@ -1,0 +1,33 @@
+Virtual Pet Project
+
+To make a basic virtual pet we need two things:
+1. the pet
+2. the pet owner
+
+The pet class will have a name and a belly value. The belly value will be how we measure the pet's hunger level.
+We need setters and getters for both.
+Pet has a method called status that returns a string to let the owner know how it feels after being fed.
+
+The pet owner class will have a name and a pet associated with it.
+The owner class will have methods used for interacting with the pet, the first being the feed method, a method used to
+increase the fullness of the pet's belly. The feed method calls the pet's status method to inform the owner of the pet's
+fullness after feeding. The owner class now includes a list of foods it can feed the pet as enums.
+
+Having a system that requires the player to type the food they want to feed to the pet isn't the best way to do that, it
+would be better to have a menu system. A basic menu class would contain a list of menu options, with methods associated
+with the selection of those options. So the main menu lists for example: 1.FEED 2.PET 3.WASH, entering 1 would bring up
+a food selection menu listing the food items as: 1.MEAT 2.VEG 3.CAKE, entering 1 would call a function like feed(MEAT).
+
+Next I think having a game class would be a good way to control the menu system and initialize the player and pet, a
+basic game loop we could run as a Runnable, that would continue to run util the player ends the game.
+
+***********************************************************************************************************************
+
+So I've had a change of plan, in my attempt to implement a menu system I've come to need to make a decision going
+forward, I need to decide if I want to start doing graphics right away or if I want to continue to make this strictly
+a console program. This is because I want to take user input from the key board, if I stay with using the console only
+I will need to use a buffered reader system to read input from the user which will cause a lot of refactoring work
+later when I decide to implement graphics. Instead I want to use the KeyListener interface which is usually used with
+JFrame, I have some experience using this from when I created a rogueLike using asciiPanel. So I've decided to switch
+fully to implementing graphics using asciiPanel going forward.
+
