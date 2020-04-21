@@ -4,6 +4,7 @@ import asciiPanel.AsciiPanel;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+//application main sets up the ascii panel and initializes the pet and petowner objects
 public class ApplicationMain extends JFrame implements KeyListener
 {
     private static final long serialVersionUID = 1060623638149583738L;

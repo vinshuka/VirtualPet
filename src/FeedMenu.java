@@ -4,6 +4,7 @@ import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+//feed menu displays food options, may move the food enum from petOwner class to this class
 public class FeedMenu implements Menu
 {
     private Pet pet;

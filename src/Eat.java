@@ -2,6 +2,7 @@ import asciiPanel.AsciiPanel;
 
 import java.awt.event.KeyEvent;
 
+//eat menu shows the result of feeding the pet
 public class Eat implements Menu
 {
     private Pet pet;

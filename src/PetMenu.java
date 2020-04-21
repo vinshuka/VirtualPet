@@ -4,6 +4,7 @@ import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+//main petMenu, all other menus lead back to this root menu
 public class PetMenu implements Menu
 {
     ArrayList<String> petOptions = new ArrayList<>(Arrays.asList("1.FEED", "2.PET", "3.WASH"));
@@ -17,6 +18,8 @@ public class PetMenu implements Menu
         this.owner = owner;
     }
 
+    //display gives the pet status, the born text may be moved to a hatch screen that runs only when the player starts
+    //the game the first time
     @Override
     public void display(AsciiPanel gameScreen)
     {

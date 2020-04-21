@@ -1,6 +1,7 @@
 import asciiPanel.AsciiPanel;
 import java.awt.event.KeyEvent;
 
+//startmenu, just basic for now. Maybe add better title and graphic in the future
 public class StartMenu implements Menu
 {
     private Pet pet;

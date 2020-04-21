@@ -1,5 +1,6 @@
 public class Pet
 {
+    //basic pet class, has a name and a belly that represents the pet's hunger level
     private String name;
     private int belly;
 
@@ -29,6 +30,7 @@ public class Pet
         this.belly += belly;
     }
 
+    //status returns a string about how the pet feels, currently only based on its belly
     public String status()
     {
         if(belly >= 90)

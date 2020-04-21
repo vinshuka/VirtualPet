@@ -1,7 +1,10 @@
 public class PetOwner
 {
+    //PetOwner class has methods for interacting with pet, taking care of pet
     private String name;
     private Pet pet;
+
+    //enum for food items, may move to another class at a later time
     public enum Food
     {
         MEAT (25, "MEAT"),
@@ -44,6 +47,7 @@ public class PetOwner
         this.pet = pet;
     }
 
+    //feed method allows petowner to increase the belly of the pet
     public String feed(Food food)
     {
         pet.setBelly(food.calories);
