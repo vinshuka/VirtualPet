@@ -15,7 +15,7 @@ public class ApplicationMain extends JFrame implements KeyListener
     public ApplicationMain()
     {
         super();
-        Pet a = new Pet("A", 75);
+        Pet a = new Pet("A", 10, 10, 10);
         PetOwner owner = new PetOwner("Melissa", a);
         gameScreen = new AsciiPanel();
         add(gameScreen);
@@ -50,6 +50,4 @@ public class ApplicationMain extends JFrame implements KeyListener
         app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         app.setVisible(true);
     }
-
-
 }

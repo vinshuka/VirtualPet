@@ -23,7 +23,6 @@ public class PetMenu implements Menu
     @Override
     public void display(AsciiPanel gameScreen)
     {
-        gameScreen.writeCenter("Your pet " + pet.getName() + " has been born", 15);
         gameScreen.writeCenter(pet.status(), 16);
         gameScreen.writeCenter(petOptions.toString(), 22);
     }
@@ -31,6 +30,12 @@ public class PetMenu implements Menu
     @Override
     public Menu userInput(KeyEvent key)
     {
-        return key.getKeyCode() == KeyEvent.VK_1 ? new FeedMenu(this.pet, this.owner) : this;
+        switch(key.getKeyCode())
+        {
+            case KeyEvent.VK_1: return new FeedMenu(this.pet, this.owner);
+            case KeyEvent.VK_2: return new Petting(this.pet, this.owner);
+            case KeyEvent.VK_3: return new Wash(this.pet, this.owner);
+        }
+        return this;
     }
 }

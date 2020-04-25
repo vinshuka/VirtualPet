@@ -51,6 +51,18 @@ public class PetOwner
     public String feed(Food food)
     {
         pet.setBelly(food.calories);
-        return pet.getName() + " eats " + food.name + " " + pet.status();
+        return pet.getName() + " eats " + food.name;
+    }
+
+    public String pet()
+    {
+        pet.setHappiness(25);
+        return name + " pets " + pet.getName();
+    }
+
+    public String wash()
+    {
+        pet.setClean(25);
+        return name + " washes " + pet.getName();
     }
 }

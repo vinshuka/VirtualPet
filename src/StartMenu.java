@@ -22,6 +22,6 @@ public class StartMenu implements Menu
     @Override
     public Menu userInput(KeyEvent key)
     {
-        return key.getKeyCode() == KeyEvent.VK_ENTER ? new PetMenu(this.pet, this.owner) : this;
+        return key.getKeyCode() == KeyEvent.VK_ENTER ? new HatchMenu(this.pet, this.owner) : this;
     }
 }
