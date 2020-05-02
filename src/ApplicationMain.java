@@ -3,6 +3,7 @@ import asciiPanel.AsciiPanel;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.HashMap;
 
 //application main sets up the ascii panel and initializes the pet and petowner objects
 public class ApplicationMain extends JFrame implements KeyListener
@@ -11,12 +12,23 @@ public class ApplicationMain extends JFrame implements KeyListener
 
     private AsciiPanel gameScreen;
     private Menu menu;
+    private Render render;
+    private Character[][] petGraphic = {
+            {(char)218,(char)196,(char)196,(char)196,(char)191},
+            {(char)179,(char)233,(char)0,(char)233,(char)179},
+            {(char)179,(char)0,(char)45,(char)0,(char)179},
+            {(char)192,(char)196,(char)196,(char)196,(char)217}
+    };
+
 
     public ApplicationMain()
     {
         super();
         Pet a = new Pet("A", 10, 10, 10);
         PetOwner owner = new PetOwner("Melissa", a);
+        HashMap<String, Character[][]> graphics = new HashMap<>();
+        graphics.put("Pet", petGraphic);
+        render = new Render(graphics);
         gameScreen = new AsciiPanel();
         add(gameScreen);
         pack();
@@ -25,9 +37,10 @@ public class ApplicationMain extends JFrame implements KeyListener
         repaint();
     }
 
-    public void repaint(){
+    public void repaint()
+    {
         gameScreen.clear();
-        menu.display(gameScreen);
+        menu.display(gameScreen, render);
         super.repaint();
     }
 

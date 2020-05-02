@@ -23,7 +23,7 @@ public class Eat implements Menu
     }
 
     @Override
-    public void display(AsciiPanel gameScreen)
+    public void display(AsciiPanel gameScreen, Render render)
     {
         for(int y = 0; y < 4; y++)
         {

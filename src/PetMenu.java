@@ -32,16 +32,17 @@ public class PetMenu implements Menu
     //display shows the current date, a simple graphic of the pet(we will try to make this animated later), the pet's
     //status, and the menu
     @Override
-    public void display(AsciiPanel gameScreen)
+    public void display(AsciiPanel gameScreen, Render render)
     {
         gameScreen.writeCenter(dtf.format(now), 8);
-        for(int y = 0; y < 4; y++)
-        {
-            for(int x = 0; x < 5; x++)
-            {
-                gameScreen.write(petGraphic[y][x], x+38, y+11);
-            }
-        }
+//        for(int y = 0; y < 4; y++)
+//        {
+//            for(int x = 0; x < 5; x++)
+//            {
+//                gameScreen.write(petGraphic[y][x], x+38, y+11);
+//            }
+//        }
+        render.drawGraphic("Pet", gameScreen);
         gameScreen.writeCenter(pet.status(), 16);
         gameScreen.writeCenter(petOptions.toString(), 22);
     }

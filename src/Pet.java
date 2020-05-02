@@ -5,6 +5,8 @@ public class Pet
     private int belly;
     private int happiness;
     private int clean;
+    private char[][] graphic;
+
 
     public Pet(String name, int belly, int happiness, int clean)
     {
@@ -111,4 +113,6 @@ public class Pet
 
         return status;
     }
+
+
 }

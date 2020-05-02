@@ -25,7 +25,7 @@ public class FeedMenu implements Menu
     }
 
     @Override
-    public void display(AsciiPanel gameScreen)
+    public void display(AsciiPanel gameScreen, Render render)
     {
         for(int y = 0; y < 5; y++)
         {

@@ -14,7 +14,7 @@ public class StartMenu implements Menu
     }
 
     @Override
-    public void display(AsciiPanel gameScreen)
+    public void display(AsciiPanel gameScreen, Render render)
     {
         gameScreen.writeCenter("Virtual Pet Please Press Enter", 22);
     }
