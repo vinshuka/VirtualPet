@@ -48,6 +48,7 @@ public class PetOwner
     }
 
     //feed method allows petowner to increase the belly of the pet
+    //future implementation, feed should reduce clean, pet should reduce belly, and wash should reduce happiness
     public String feed(Food food)
     {
         pet.setBelly(food.calories);

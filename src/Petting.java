@@ -6,6 +6,12 @@ public class Petting implements Menu
 {
     private Pet pet;
     private PetOwner owner;
+    private char[][] pettingGraphic = {
+            {' ',(char)3,'P','E','T'},
+            {'P','E','T',(char)3,' '},
+            {' ',(char)3,'P','E','T'},
+            {'P','E','T',(char)3,' '}
+    };
 
     public Petting(Pet pet, PetOwner owner)
     {
@@ -16,6 +22,13 @@ public class Petting implements Menu
     @Override
     public void display(AsciiPanel gameScreen)
     {
+        for(int y = 0; y < 4; y++)
+        {
+            for(int x = 0; x < 5; x++)
+            {
+                gameScreen.write(pettingGraphic[y][x], x+38, y+9);
+            }
+        }
         gameScreen.writeCenter(owner.pet(), 15);
         gameScreen.writeCenter("Press Enter to return", 22);
     }

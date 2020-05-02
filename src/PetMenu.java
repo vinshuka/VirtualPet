@@ -1,6 +1,8 @@
 import asciiPanel.AsciiPanel;
 
 import java.awt.event.KeyEvent;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -11,6 +13,15 @@ public class PetMenu implements Menu
 
     private Pet pet;
     private PetOwner owner;
+    //move pet graphic to pet class to make it more dynamic, we can change which graphic is shown based off, pet status
+    private char[][] petGraphic = {
+            {(char)218,(char)196,(char)196,(char)196,(char)191},
+            {(char)179,(char)233,(char)0,(char)233,(char)179},
+            {(char)179,(char)0,(char)45,(char)0,(char)179},
+            {(char)192,(char)196,(char)196,(char)196,(char)217}
+    };
+    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+    LocalDateTime now = LocalDateTime.now();
 
     public PetMenu(Pet pet, PetOwner owner)
     {
@@ -18,11 +29,19 @@ public class PetMenu implements Menu
         this.owner = owner;
     }
 
-    //display gives the pet status, the born text may be moved to a hatch screen that runs only when the player starts
-    //the game the first time
+    //display shows the current date, a simple graphic of the pet(we will try to make this animated later), the pet's
+    //status, and the menu
     @Override
     public void display(AsciiPanel gameScreen)
     {
+        gameScreen.writeCenter(dtf.format(now), 8);
+        for(int y = 0; y < 4; y++)
+        {
+            for(int x = 0; x < 5; x++)
+            {
+                gameScreen.write(petGraphic[y][x], x+38, y+11);
+            }
+        }
         gameScreen.writeCenter(pet.status(), 16);
         gameScreen.writeCenter(petOptions.toString(), 22);
     }

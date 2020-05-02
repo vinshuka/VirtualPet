@@ -8,6 +8,12 @@ public class Eat implements Menu
     private Pet pet;
     private PetOwner owner;
     private PetOwner.Food food;
+    private char[][] eatGraphic = {
+            {' ','N','O','M','!'},
+            {'N','O','M','!',' '},
+            {' ','N','O','M','!'},
+            {'N','O','M','!',' '},
+    };
 
     public Eat(Pet pet, PetOwner owner, PetOwner.Food food)
     {
@@ -19,6 +25,13 @@ public class Eat implements Menu
     @Override
     public void display(AsciiPanel gameScreen)
     {
+        for(int y = 0; y < 4; y++)
+        {
+            for(int x = 0; x < 5; x++)
+            {
+                gameScreen.write(eatGraphic[y][x], x+38, y+9);
+            }
+        }
         gameScreen.writeCenter(owner.feed(food), 15);
         gameScreen.writeCenter("Press Enter to return", 22);
     }

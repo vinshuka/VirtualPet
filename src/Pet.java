@@ -1,6 +1,6 @@
 public class Pet
 {
-    //basic pet class, has a name and a belly that represents the pet's hunger level
+    //basic pet class, has a name, belly, happiness, and clean values
     private String name;
     private int belly;
     private int happiness;
