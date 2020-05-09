@@ -1,35 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd75841b-8f86-49bd-97f5-bf6996c89c31" name="Default Changelist" comment="Complete Refactor to Game loop system, for &quot;real time&quot; updates and rendering.">
-      <change afterPath="$PROJECT_DIR$/src/VirtualPet.java" afterDir="false" />
+    <list default="true" id="fd75841b-8f86-49bd-97f5-bf6996c89c31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/ApplicationMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Eat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/FeedMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/HatchMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/Notes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/Pet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/PetMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/PetOwner$Food.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/PetOwner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/PetOwner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Petting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/StartMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Wash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApplicationMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Eat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FeedMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HatchMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PetMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PetOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PetOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Petting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Render.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualPet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualPet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587223092370</updated>
-      <workItem from="1587223094213" duration="103634000" />
+      <workItem from="1587223094213" duration="110657000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Refactoring to Render system">
       <created>1588457723610</created>
@@ -119,11 +95,28 @@
       <option name="project" value="LOCAL" />
       <updated>1588457723610</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Complete Refactor to Game loop system, for &quot;real time&quot; updates and rendering.">
+      <created>1589020174803</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589020174803</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Refactoring to Render system" />
@@ -155,30 +148,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="547" y="162" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.860@0.0.1600.860" timestamp="1588649464152" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1589020148532">
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1589041761617">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1589020148532" />
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1589041761617" />
     <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1587799130290">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1587799130290" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1589020148558">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1589041761642">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1589020148558" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1589020148558">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1589041761642" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1589041761642">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1589020148558" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1589020148558">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1589041761642" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1589041761642">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1589020148558" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1589020148558">
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1589041761642" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1589041761642">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1589020148558" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1589041761642" />
     <state width="1557" height="276" key="GridCell.Tab.1.bottom" timestamp="1588650948296">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -203,10 +196,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="280" y="4" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1588651102340" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1588457864763">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1589020251595">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1588457864763" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1589020251595" />
     <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589019937885">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

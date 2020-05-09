@@ -174,8 +174,7 @@ public class Pet
         {
             status += ", and filthy.";
         }
+        status += belly + " " + happiness + " " + clean;
         return status;
     }
-
-
 }

@@ -242,7 +242,7 @@ public class VirtualPet extends JFrame implements KeyListener
      */
     public void changeFrame()
     {
-        if(frames % 24 == 0)
+        if(frames % 600 == 0)
         {
             if(currentFrame == 1)
             {
@@ -266,7 +266,7 @@ public class VirtualPet extends JFrame implements KeyListener
      * Overrides keyPressed. Calls processInput, passing in the currentMenu and the KeyEvent. Clears the screen, renders
      * the new screen, and repaints the JFrame with the new screen
      */
-    public void keyPressed(KeyEvent e)
+    public synchronized void keyPressed(KeyEvent e)
     {
         processInput(e, getMenu());
         gameScreen.clear();
@@ -591,9 +591,7 @@ public class VirtualPet extends JFrame implements KeyListener
         while(true)
         {
             app.update(app.getMenu());
-            //currently this sleep is required to slow processing down enough for our variables to be updated, otherwise
-            //incorrect values are rendered.
-            Thread.sleep(16);
+            Thread.sleep(1);
             app.render(app.getMenu(), app.gameScreen);
         }
     }
