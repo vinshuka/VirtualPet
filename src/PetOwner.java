@@ -1,31 +1,25 @@
+/**
+ * PetOwner class contains methods for interacting with the pet.
+ */
 public class PetOwner
 {
-    //PetOwner class has methods for interacting with pet, taking care of pet
     private String name;
     private Pet pet;
 
-    //enum for food items, may move to another class at a later time
-    public enum Food
-    {
-        MEAT (25, "MEAT"),
-        VEG (15, "VEG"),
-        CAKE (20, "CAKE");
-
-        private final int calories;
-        private final String name;
-
-        Food(int calories, String name)
-        {
-            this.calories = calories;
-            this.name = name;
-        }
-    }
-
+    /**
+     * PetOwner constructor. In the future we will add a method to allow the player to set their name.
+     * @param name
+     * @param pet
+     */
     public PetOwner(String name, Pet pet)
     {
         this.name = name;
         this.pet = pet;
     }
+
+    /**
+     * Currently unused setters and getters, I'll be leaving them here for now, as we may need them later.
+     */
 
     public String getName()
     {
@@ -47,23 +41,30 @@ public class PetOwner
         this.pet = pet;
     }
 
-    //feed method allows petowner to increase the belly of the pet
-    //future implementation, feed should reduce clean, pet should reduce belly, and wash should reduce happiness
-    public String feed(Food food)
+    /**
+     * feed method allows our PetOwner to set the belly value of their pet.
+     * @param food
+     */
+    public void feed(int food)
     {
-        pet.setBelly(food.calories);
-        return pet.getName() + " eats " + food.name;
+        pet.setBelly(food);
     }
 
-    public String pet()
+    /**
+     * pat method allows our PetOwner to set the happiness value of their pet.
+     * @param patValue
+     */
+    public void pat(int patValue)
     {
-        pet.setHappiness(25);
-        return name + " pets " + pet.getName();
+        pet.setHappiness(patValue);
     }
 
-    public String wash()
+    /**
+     * wash method allows our PetOwner to set the clean value of their pet.
+     * @param washValue
+     */
+    public void wash(int washValue)
     {
-        pet.setClean(25);
-        return name + " washes " + pet.getName();
+        pet.setClean(washValue);
     }
 }

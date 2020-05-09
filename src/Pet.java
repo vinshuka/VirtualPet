@@ -1,13 +1,21 @@
+/**
+ * Pet class controls all values associated with a Pet
+ */
 public class Pet
 {
-    //basic pet class, has a name, belly, happiness, and clean values
     private String name;
     private int belly;
     private int happiness;
     private int clean;
-    private char[][] graphic;
 
-
+    /**
+     * Pet constructor, initializes the pet with its given values, may add a method in the future for the player to name
+     * their pet.
+     * @param name
+     * @param belly
+     * @param happiness
+     * @param clean
+     */
     public Pet(String name, int belly, int happiness, int clean)
     {
         this.name = name;
@@ -15,6 +23,11 @@ public class Pet
         this.happiness = happiness;
         this.clean = clean;
     }
+
+    /**
+     * Setters and getters for the pet class, some of these are currently unused, I will leave them for now incase they
+     * are needed later.
+     */
 
     public String getName()
     {
@@ -31,9 +44,20 @@ public class Pet
         return belly;
     }
 
+    /**
+     * Setters for belly, happiness, and clean have a conditional that locks the maximum value to 100.
+     */
+
     public void setBelly(int belly)
     {
-        this.belly += belly;
+        if(this.belly + belly > 100)
+        {
+            this.belly = 100;
+        }
+        else
+        {
+            this.belly += belly;
+        }
     }
 
     public int getHappiness()
@@ -43,7 +67,14 @@ public class Pet
 
     public void setHappiness(int happiness)
     {
-        this.happiness += happiness;
+        if(this.happiness + happiness > 100)
+        {
+            this.happiness = 100;
+        }
+        else
+        {
+            this.happiness += happiness;
+        }
     }
 
     public int getClean()
@@ -53,10 +84,43 @@ public class Pet
 
     public void setClean(int clean)
     {
-        this.clean += clean;
+        if(this.clean + clean > 100)
+        {
+            this.clean = 100;
+        }
+        else
+        {
+            this.clean += clean;
+        }
+
     }
 
-    //status returns a string about how the pet feels
+    /**
+     * getMood returns a string based on the pet's overall condition, this is used to display the correct graphic for
+     * the pet.
+     * @return
+     */
+    public String getMood()
+    {
+        int mood = belly + happiness + clean;
+        if(mood >= 150)
+        {
+            return "happy";
+        }
+        else if(mood >= 100)
+        {
+            return "content";
+        }
+        else
+        {
+            return "sad";
+        }
+    }
+
+    /**
+     * status method returns a string that summarizes the pet's current condition based on all of its variables.
+     * @return
+     */
     public String status()
     {
         String status = name;
@@ -110,7 +174,6 @@ public class Pet
         {
             status += ", and filthy.";
         }
-
         return status;
     }
 

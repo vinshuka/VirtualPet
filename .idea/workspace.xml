@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd75841b-8f86-49bd-97f5-bf6996c89c31" name="Default Changelist" comment="Initial Refactoring to Render system">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Render.java" afterDir="false" />
+    <list default="true" id="fd75841b-8f86-49bd-97f5-bf6996c89c31" name="Default Changelist" comment="Complete Refactor to Game loop system, for &quot;real time&quot; updates and rendering.">
+      <change afterPath="$PROJECT_DIR$/src/VirtualPet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/ApplicationMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/ApplicationMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Eat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/Eat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/FeedMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/FeedMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/HatchMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/HatchMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/ApplicationMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Eat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/FeedMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/HatchMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/Notes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/Pet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/PetMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/PetMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Petting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/Petting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/StartMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/StartMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Wash.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/Wash.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApplicationMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Eat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Eat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FeedMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FeedMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HatchMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HatchMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/PetMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/PetOwner$Food.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/PetOwner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VirtualPet/PetOwner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Petting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/StartMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VirtualPet/Wash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApplicationMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Eat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FeedMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HatchMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PetMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PetMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Petting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Petting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PetMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PetOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PetOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Petting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Render.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wash.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +67,10 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
   </component>
-  <component name="RunManager" selected="Application.ApplicationMain">
+  <component name="RunManager" selected="Application.VirtualPet">
     <configuration name="ApplicationMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ApplicationMain" />
       <module name="VirtualPet" />
@@ -81,8 +85,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VirtualPet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VirtualPet" />
+      <module name="VirtualPet" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VirtualPet" />
         <item itemvalue="Application.ApplicationMain" />
         <item itemvalue="Application.MainTester" />
       </list>
@@ -98,8 +110,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587223092370</updated>
-      <workItem from="1587223094213" duration="52254000" />
+      <workItem from="1587223094213" duration="103634000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Refactoring to Render system">
+      <created>1588457723610</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588457723610</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,61 +127,90 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Refactoring to Render system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Refactoring to Render system" />
+    <MESSAGE value="Complete Refactor to Game loop system, for &quot;real time&quot; updates and rendering." />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete Refactor to Game loop system, for &quot;real time&quot; updates and rendering." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="392" y="88" key="#Deployment" timestamp="1589020018063">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="88" key="#Deployment/0.0.1600.860@0.0.1600.860" timestamp="1589020018063" />
+    <state x="392" y="88" key="#Inspections" timestamp="1588528684925">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="88" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1588528684925" />
     <state x="569" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587223294668">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="569" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1587223294668" />
-    <state x="605" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1587800995503">
+    <state x="605" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1588505014231">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="605" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1587800995503" />
-    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587311275430">
+    <state x="605" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1588505014231" />
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589014485930">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1587311275430" />
-    <state x="547" y="162" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1587799139367">
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1589014485930" />
+    <state x="547" y="162" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588649464152">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="547" y="162" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.860@0.0.1600.860" timestamp="1587799139367" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1588457658744">
+    <state x="547" y="162" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.860@0.0.1600.860" timestamp="1588649464152" />
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1589020148532">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1588457658744" />
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1589020148532" />
     <state x="580" y="184" key="FileChooserDialogImpl" timestamp="1587799130290">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1587799130290" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1588457658775">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1589020148558">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1588457658775" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1588457658775">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1589020148558" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1589020148558">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1588457658775" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1588457658775">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1589020148558" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1589020148558">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1588457658775" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1588457658775">
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1589020148558" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1589020148558">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1588457658775" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1589020148558" />
+    <state width="1557" height="276" key="GridCell.Tab.1.bottom" timestamp="1588650948296">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="276" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1588650948296" />
+    <state width="1557" height="276" key="GridCell.Tab.1.center" timestamp="1588650948296">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="276" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1588650948296" />
+    <state width="1557" height="276" key="GridCell.Tab.1.left" timestamp="1588650948296">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="276" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1588650948296" />
+    <state width="1557" height="276" key="GridCell.Tab.1.right" timestamp="1588650948296">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1588650948296" />
     <state x="589" y="152" key="RollbackChangesDialog" timestamp="1588409400671">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="589" y="152" key="RollbackChangesDialog/0.0.1600.860@0.0.1600.860" timestamp="1588409400670" />
-    <state x="280" y="4" key="SettingsEditor" timestamp="1588457459244">
+    <state x="280" y="4" key="SettingsEditor" timestamp="1588651102340">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="280" y="4" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1588457459244" />
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587801391936">
+    <state x="280" y="4" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1588651102340" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1588457864763">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1587801391936" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1588457864763" />
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589019937885">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="609" y="347" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1589019937885" />
     <state x="456" y="195" key="run.anything.popup" timestamp="1587887289635">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -170,9 +219,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="scopes/0.0.1600.860@0.0.1600.860" timestamp="1587799078498" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1587893586030">
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1588862782149">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1587893586030" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1588862782149" />
   </component>
 </project>
